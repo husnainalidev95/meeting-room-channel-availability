@@ -15,7 +15,16 @@ function UseVenues() {
     setFilteredData(venues.data);
   };
 
-  return { filteredData };
+  const handleFilterChange = (channelId) => {
+    if (channelId === 0) {
+      setFilteredData(data);
+      return;
+    }
+    const filteredDataOnChannelId = data.filter(x => x.channel.id === channelId);
+    setFilteredData(filteredDataOnChannelId);
+  };
+
+  return { filteredData, handleFilterChange };
 }
 
 export default UseVenues;

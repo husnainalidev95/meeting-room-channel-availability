@@ -1,38 +1,89 @@
 {
-    "venues": [{
+  "venues": [
+    {
+      "id": 1,
+      "name": "Hard Rock Cafe",
+      "channel": {
         "id": 1,
-        "name": "Hard Rock Cafe",
-        "channel": "booking.com",
-        "isVisible": true
-    }, {
+        "name": "Booking.com"
+      },
+      "isVisible": true
+    },
+    {
+      "id": 2,
+      "name": "Holidy Inn",
+      "channel": {
         "id": 2,
-        "name": "Holidy Inn",
-        "channel": "airbnb",
-        "isVisible": false
-    }, {
+        "name": "Airbnb"
+      },
+      "isVisible": false
+    },
+    {
+      "id": 3,
+      "name": "Jhulatila",
+      "channel": {
         "id": 3,
-        "name": "Jhulatila",
-        "channel": "vrbo",
-        "isVisible": true
-    }, {
+        "name": "Vrbo"
+      },
+      "isVisible": true
+    },
+    {
+      "id": 4,
+      "name": "Hotel St. George",
+      "channel": {
         "id": 4,
-        "name": "Hotel St. George",
-        "channel": "trip advisor",
-        "isVisible": true
-    }, {
+        "name": "Trip advisor"
+      },
+      "isVisible": true
+    },
+    {
+      "id": 5,
+      "name": "Radison Blu Plaza Hotel",
+      "channel": {
         "id": 5,
-        "name": "Radison Blu Plaza Hotel",
-        "channel": "flip key",
-        "isVisible": false
-    }, {
-        "id": 6,
-        "name": "Hotel Kämp",
-        "channel": "airbnb",
-        "isVisible": false
-    }, {
-        "id": 7,
-        "name": "Hotel Arthur",
-        "channel": "booking.com",
-        "isVisible": true
-    }]
+        "name": "Flip key"
+      },
+      "isVisible": false
+    },
+    {
+      "id": 6,
+      "name": "Hotel Kämp",
+      "channel": {
+        "id": 2,
+        "name": "Airbnb"
+      },
+      "isVisible": false
+    },
+    {
+      "id": 7,
+      "name": "Hotel Arthur",
+      "channel": {
+        "id": 1,
+        "name": "Booking.com"
+      },
+      "isVisible": true
+    }
+  ],
+  "channels": [
+    {
+      "id": 1,
+      "name": "Booking.com"
+    },
+    {
+      "id": 2,
+      "name": "Airbnb"
+    },
+    {
+      "id": 3,
+      "name": "Vrbo"
+    },
+    {
+      "id": 4,
+      "name": "Trip advisor"
+    },
+    {
+      "id": 5,
+      "name": "Flip key"
+    }
+  ]
 }

@@ -4,15 +4,17 @@ import Table from "./components/table";
 import Select from "./components/select";
 import Container from '@mui/material/Container';
 import useVenues from "./hooks/useVenues";
+import useChannels from "./hooks/useChannels";
 
 function App() {
-  const { filteredData } = useVenues();
+  const { filteredData, handleFilterChange } = useVenues();
+  const { channels } = useChannels();
 
   return (
     <>
       <NavBar />
       <Container sx={{ mt: 5 }}>
-        <Select />
+        <Select options={channels} handleFilterChange={handleFilterChange} />
         <Table data={filteredData} />
       </Container>
 

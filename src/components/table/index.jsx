@@ -28,7 +28,7 @@ export default function MaterialUITable({ data }) {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell sx={{ textTransform: 'capitalize' }}>{row.channel}</TableCell>
+              <TableCell>{row.channel.name}</TableCell>
               <TableCell>
                 <Switch checked={row.isVisible} />
               </TableCell>
