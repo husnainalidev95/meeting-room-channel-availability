@@ -7,7 +7,7 @@ import useVenues from "./hooks/useVenues";
 import useChannels from "./hooks/useChannels";
 
 function App() {
-  const { filteredData, handleFilterChange } = useVenues();
+  const { filteredData, handleStatusChange, handleFilterChange } = useVenues();
   const { channels } = useChannels();
 
   return (
@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <Container sx={{ mt: 5 }}>
         <Select options={channels} handleFilterChange={handleFilterChange} />
-        <Table data={filteredData} />
+        <Table data={filteredData} handleStatusChange={handleStatusChange} />
       </Container>
 
       <Footer />

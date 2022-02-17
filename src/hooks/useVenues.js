@@ -15,6 +15,11 @@ function UseVenues() {
     setFilteredData(venues.data);
   };
 
+  const handleStatusChange = async (data) => {
+    await axios.put(`http://localhost:3001/venues/${data.id}`, data);
+    getVenues();
+  };
+
   const handleFilterChange = (channelId) => {
     if (channelId === 0) {
       setFilteredData(data);
@@ -24,7 +29,7 @@ function UseVenues() {
     setFilteredData(filteredDataOnChannelId);
   };
 
-  return { filteredData, handleFilterChange };
+  return { filteredData, handleStatusChange, handleFilterChange };
 }
 
 export default UseVenues;

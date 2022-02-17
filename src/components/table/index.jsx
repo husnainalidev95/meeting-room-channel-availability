@@ -8,10 +8,16 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Switch from '@mui/material/Switch';
 
-export default function MaterialUITable({ data }) {
+export default function MaterialUITable({ data, handleStatusChange }) {
+  const handleSwitchChange = (venue) => {
+    let updatedVenue = { ...venue };
+    updatedVenue.isVisible = !updatedVenue.isVisible;
+    handleStatusChange(updatedVenue);
+  };
+
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }}>
         <TableHead>
           <TableRow>
             <TableCell>Venue Name</TableCell>
@@ -30,7 +36,7 @@ export default function MaterialUITable({ data }) {
               </TableCell>
               <TableCell>{row.channel.name}</TableCell>
               <TableCell>
-                <Switch checked={row.isVisible} />
+                <Switch checked={row.isVisible} onChange={() => handleSwitchChange(row)} />
               </TableCell>
             </TableRow>
           ))}
