@@ -6,7 +6,9 @@ import Container from '@mui/material/Container';
 import useVenues from "./hooks/useVenues";
 import useChannels from "./hooks/useChannels";
 
+// main component to render app
 function App() {
+  // custom hooks to fetch, update and filter data
   const { filteredData, handleStatusChange, handleFilterChange } = useVenues();
   const { channels } = useChannels();
 
@@ -17,7 +19,6 @@ function App() {
         <Select options={channels} handleFilterChange={handleFilterChange} />
         <Table data={filteredData} handleStatusChange={handleStatusChange} />
       </Container>
-
       <Footer />
     </>
   );

@@ -8,7 +8,11 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Switch from '@mui/material/Switch';
 
+// table component with two props data and handleStatusChange
+
 export default function MaterialUITable({ data, handleStatusChange }) {
+
+  // function to handle switch component change
   const handleSwitchChange = (venue) => {
     let updatedVenue = { ...venue };
     updatedVenue.isVisible = !updatedVenue.isVisible;

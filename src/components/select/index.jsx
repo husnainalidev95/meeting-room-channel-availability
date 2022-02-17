@@ -5,9 +5,12 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+// select component with two props options and handleFilterChange
 export default function MUISelect({ options, handleFilterChange }) {
+  // state to save the selected channel
   const [selectedChannel, setSelectedChannel] = useState('');
 
+  // function to change selected state in dropdown
   const handleChange = (e) => {
     const { value } = e.target;
     setSelectedChannel(value);

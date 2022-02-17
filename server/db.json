@@ -16,7 +16,7 @@
         "id": 2,
         "name": "Airbnb"
       },
-      "isVisible": true
+      "isVisible": false
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
         "id": 4,
         "name": "Trip advisor"
       },
-      "isVisible": true
+      "isVisible": false
     },
     {
       "id": 5,
