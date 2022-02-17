@@ -1,0 +1,38 @@
+{
+    "venues": [{
+        "id": 1,
+        "name": "Hard Rock Cafe",
+        "channel": "booking.com",
+        "isVisible": true
+    }, {
+        "id": 2,
+        "name": "Holidy Inn",
+        "channel": "airbnb",
+        "isVisible": false
+    }, {
+        "id": 3,
+        "name": "Jhulatila",
+        "channel": "vrbo",
+        "isVisible": true
+    }, {
+        "id": 4,
+        "name": "Hotel St. George",
+        "channel": "trip advisor",
+        "isVisible": true
+    }, {
+        "id": 5,
+        "name": "Radison Blu Plaza Hotel",
+        "channel": "flip key",
+        "isVisible": false
+    }, {
+        "id": 6,
+        "name": "Hotel Kämp",
+        "channel": "airbnb",
+        "isVisible": false
+    }, {
+        "id": 7,
+        "name": "Hotel Arthur",
+        "channel": "booking.com",
+        "isVisible": true
+    }]
+}
