@@ -14,7 +14,7 @@ function UseChannels() {
   // function to fetch channels
   const getChannels = async () => {
     try {
-      const res = await channelApi.getVenues();
+      const res = await channelApi.getChannels();
       setChannels(res.data);
     } catch (err) {
       console.log('err', err);
